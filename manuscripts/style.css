@@ -9,3 +9,82 @@ figcaption {
     width: 100%;
     text-align: center;
 }
+
+/* 索引用 */
+
+
+#index h2 {
+    border: none;
+    font-size: 1.1em;
+    height: unset;
+    line-height: unset;
+    padding: 0.5em 1em;
+}
+
+#index h2::before {
+    content: "◇ ";
+}
+
+#index a {
+    color: transparent;
+}
+
+#index a::after,
+#index li a::after {
+    content: target-counter(attr(href), page);
+    color: black;
+}
+
+
+#index dl div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#index div::after {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-bottom: dashed 1px;
+    content: "";
+    flex: auto;
+    /* background-color: blue; */
+    order: 2;
+}
+
+#index dt {
+    /* width: 30%; */
+    /* background-color: aquamarine; */
+    /* margin-right: auto; */
+    flex: none;
+    order: 1;
+}
+
+#index dd {
+    /* background-color: lightcoral; */
+    width: 1.8em;
+    margin: 0;
+    order: 3;
+}
+
+#index dd::after {
+    content: ",";
+}
+
+#index dd:last-of-type()::after {
+    content: "";
+}
+
+/* 索引動作確認用*/
+
+.hw { /* 見出し語 */
+    color: blue;
+    text-decoration: underline;
+}
+
+.nhw { /* 不活性な見出し語 */
+    color: skyblue;
+    text-decoration: underline;
+}
