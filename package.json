@@ -6,10 +6,11 @@
   "author": "Ayumu Takai <atakai@hackwork.jp>",
   "license": "MIT",
   "dependencies": {
-    "mermaid": "^9.2.0"
+    "mermaid": "^9.2.0",
+    "snapsvg": "^0.5.1"
   },
   "scripts": {
-    "postinstall": "cpx ./node_modules/mermaid/dist/mermaid.min.js ./manuscripts/scripts/"
+    "postinstall": "cpx ./node_modules/mermaid/dist/mermaid.min.js ./manuscripts/scripts/ && cpx ./node_modules/snapsvg/dist/snap.svg-min.js ./manuscripts/scripts/"
   },
   "devDependencies": {
     "cpx": "^1.5.0"

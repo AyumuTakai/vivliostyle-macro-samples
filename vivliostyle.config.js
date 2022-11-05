@@ -7,7 +7,8 @@ const vivliostyleConfig = {
   theme: './style.css',
   image: 'ghcr.io/vivliostyle/cli:5.8.1',
   entry: [ 
-    "mermaid.md"
+    "mermaid.md",
+    "notation.md"
   ], // 'entry' can be 'string' or 'object' if there's only single markdown file
   entryContext: './manuscripts',
   output: [ // path to generate draft file(s). default to '{title}.pdf'

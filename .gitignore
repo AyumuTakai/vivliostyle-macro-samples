@@ -109,3 +109,4 @@ book/
 manuscripts/publication.json
 manuscripts/*.html
 manuscripts/scripts/mermaid.min.js
+manuscripts/scripts/snap.svg-min.js
