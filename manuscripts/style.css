@@ -50,20 +50,15 @@ figcaption {
     border-bottom: dashed 1px;
     content: "";
     flex: auto;
-    /* background-color: blue; */
     order: 2;
 }
 
 #index dt {
-    /* width: 30%; */
-    /* background-color: aquamarine; */
-    /* margin-right: auto; */
     flex: none;
     order: 1;
 }
 
 #index dd {
-    /* background-color: lightcoral; */
     width: 1.8em;
     margin: 0;
     order: 3;
@@ -79,12 +74,14 @@ figcaption {
 
 /* 索引動作確認用*/
 
-.hw { /* 見出し語 */
+.hw {
+    /* 見出し語 */
     color: blue;
     text-decoration: underline;
 }
 
-.nhw { /* 不活性な見出し語 */
+.nhw {
+    /* 不活性な見出し語 */
     color: skyblue;
     text-decoration: underline;
 }
