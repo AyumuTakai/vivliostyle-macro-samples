@@ -1,0 +1,17 @@
+{
+  "name": "vivliostyle-macro-samples",
+  "version": "1.0.0",
+  "description": "Vivliostyle-CLI",
+  "repository": "https://github.com/AyumuTakai/vivliostyle-macro-samples.git",
+  "author": "Ayumu Takai <atakai@hackwork.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "mermaid": "^9.2.0"
+  },
+  "scripts": {
+    "postinstall": "cpx ./node_modules/mermaid/dist/mermaid.min.js ./manuscripts/scripts/"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
+  }
+}

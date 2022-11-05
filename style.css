@@ -1,0 +1,11 @@
+/* mermaid用 */
+
+.language-mermaid-render {
+    width: 100%;
+    text-align: center;
+}
+
+figcaption {
+    width: 100%;
+    text-align: center;
+}

@@ -108,3 +108,4 @@ dist
 book/
 manuscripts/publication.json
 manuscripts/*.html
+manuscripts/scripts/mermaid.min.js
