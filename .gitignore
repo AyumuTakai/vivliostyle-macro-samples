@@ -106,3 +106,5 @@ dist
 # Vivliostyle
 .vivliostyle
 book/
+manuscripts/publication.json
+manuscripts/*.html
