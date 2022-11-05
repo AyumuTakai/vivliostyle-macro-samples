@@ -80,14 +80,18 @@ const vivliostyleConfig = {
         match: ([, headwords], h) => {
           headwords = headwords.split(",");
           const dict = [];
+          // 与えられた頭文字を持つ見出し語のリストのリストを取得
           for (const word of Object.keys(words)) {
             if (headwords.includes(words[word][0].yomi.substring(0, 1))) {
               dict[word] = words[word];
             }
           }
+          // 見出し語の出力
           const divs = [];
-          for (const word of Object.keys(dict)) {
+          const orderedWords = Object.keys(dict).sort((a,b)=>dict[a][0].yomi.localeCompare(dict[b][0].yomi));
+          for (const word of orderedWords) {
             const l = [h("dt", word)];
+            // 記載ページのリスト
             for (const ref of dict[word]) {
               l.push(h("dd", h("a", { href: ref.href }, ".")));
             }
